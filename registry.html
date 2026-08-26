@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cryptid Registry — Registry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- TODO: navbar (same as index.html, with Registry marked active) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">The Cryptid Registry<i class="bi bi-bookmarks"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="index.html"><i class="bi bi-house"></i>Home</a>
+        <a class="nav-link active" href="registry.html" aria-current="page"></a>
+        <a class="nav-link" href="report.html"><i class="bi bi-flag"></i> Report a Sighting</a>
+        <a class="nav-link disabled" aria-disabled="true">Map</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- TODO: give <main> a container (all pages) — `class="container py-5"` -->
+  <main class="container py-5">
+    <header class="display-4 lead text-center py-5">
+    <h1 class="fs-10">The Registry</h1>
+</header>
+
+    <!-- TODO: card grid — row g-4, col-md-6 col-lg-4, cards with h-100, a badge, and a button.
+         The images are already here: make each one a card-img-top. -->
+<div class="row g-4">
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/hodag.webp" class="card-img-top" alt="The Hodag">
+  <div class="card-body">
+    <h5 class="card-title">The Hodag</h5>
+    <p class="card-text">Horns, fangs, and a documented appetite for white bulldogs. Rhinelander's own — and the only entry here with a confession attached.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+  Rhinelander, Wisconsin
+</span>
+<!-- Make the badges bigger when viewed on larger screens to match button sizes -->
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+  Rhinelander, Wisconsin
+</span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/bigfoot.webp" class="card-img-top" alt="Bigfoot">
+  <div class="card-body">
+    <h5 class="card-title">Bigfoot</h5>
+    <p class="card-text">The most-reported creature in the archive by a factor of ten. Big feet, bad photographs, and a great many plaster casts.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+        Pacific Northwest</span>
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+        Pacific Northwest</span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/mothman.webp" class="card-img-top" alt="Mothman">
+  <div class="card-body">
+    <h5 class="card-title">Mothman</h5>
+    <p class="card-text">Seven feet tall with red eyes, seen for thirteen months over Point Pleasant — a run that ended the night the bridge came down.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+        Point Pleasant, WV
+      </span>
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+        Point Pleasant, WV
+      </span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/lochness.webp" class="card-img-top" alt="The Loch Ness Monster">
+  <div class="card-body">
+    <h5 class="card-title">The Loch Ness Monster</h5>
+    <p class="card-text">First written down in the year 565, which makes this the oldest file we hold. Fourteen centuries of sonar, submarines and murky water.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+        Loch Ness, Scotland
+      </span>
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+        Loch Ness, Scotland
+      </span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/jerseydevil.webp" class="card-img-top" alt="The Jersey Devil">
+  <div class="card-body">
+    <h5 class="card-title">The Jersey Devil</h5>
+    <p class="card-text">>The thirteenth child of Mother Leeds, born 1735. Hooves, wings, and three hundred years of screaming in the Pine Barrens.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+        Pine Barrens, NJ
+      </span>
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+        Pine Barrens, NJ
+      </span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+  <img src="img/cryptids/chupacabra.webp" class="card-img-top" alt="Chupacabra">
+  <div class="card-body">
+    <h5 class="card-title">Chupacabra</h5>
+    <p class="card-text">Drained livestock and a ridge of spines down its back. Most reports, on inspection, resolve into coyotes with mange.</p>
+    <a href="#" class="btn btn-primary position-relative w-100 pt-4">
+      Map
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 small text-nowrap d-inline d-md-none">
+        Puerto Rico
+      </span>
+      <span class="badge rounded-pill bg-secondary position-absolute top-0 start-0 h-70 fs-7 text-nowrap d-none d-md-inline">
+        Puerto Rico
+      </span>
+    </a>
+  </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <!-- TODO: footer -->
+  <footer class="text-center">
+    <p class="text-muted py-4 mb-1">© 2026 The Cryptid Registry <i class="bi bi-journals"></i></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="registry-checks.js"></script>
+</body>
+</html>
