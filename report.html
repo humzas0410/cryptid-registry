@@ -24,6 +24,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">The Cryptid Registry<i class="bi bi-bookmarks"></i></a>
+    <button id="themeToggle" class="btn btn-link nav-link" style="border: none; padding: 0.5rem;">
+      <i class="bi bi-moon" id="themeIcon"></i>
+    </button>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,12 +35,25 @@
         <a class="nav-link" href="index.html"><i class="bi bi-house"></i>Home</a>
         <a class="nav-link" href="registry.html"><i class="bi bi-book"></i> Registry</a>
         <a class="nav-link active" href="report.html" aria-current="page"></a>
-        <a class="nav-link" href="#" onclick="alert('Map feature coming soon!')"><i class="bi bi-pin-map"></i> Map</a>
+        <a class="nav-link" href="#" onclick="alert('Not Quite Ready Yet...')"><i class="bi bi-pin-map"></i> Map</a>
       </div>
     </div>
   </div>
 </nav>
 
+<script>
+  let isDark = false;
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    isDark = !isDark;
+    if (isDark) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+    }
+    document.getElementById('themeIcon').classList.toggle('bi-moon');
+    document.getElementById('themeIcon').classList.toggle('bi-sun');
+  });
+</script>
   <!-- TODO: give <main> a container (all pages) — `class="container py-5"` -->
   <main class="container py-5">
     <h1>Report a Sighting</h1>

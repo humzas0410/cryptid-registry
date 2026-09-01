@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">The Cryptid Registry<i class="bi bi-bookmarks"></i></a>
+    <button id="themeToggle" class="btn btn-link nav-link" style="border: none; padding: 0.5rem;">
+      <i class="bi bi-moon" id="themeIcon"></i>
+    </button>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,6 +41,19 @@
   </div>
 </nav>
 
+<script>
+  let isDark = false;
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    isDark = !isDark;
+    if (isDark) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+    }
+    document.getElementById('themeIcon').classList.toggle('bi-moon');
+    document.getElementById('themeIcon').classList.toggle('bi-sun');
+  });
+</script>
   <!-- TODO: hero — display heading, lead paragraph, button to registry.html; centered, generous py -->
   <header class="display-4 lead text-center py-5">
     <h1 class="fs-10">The Cryptid Registry</h1>
